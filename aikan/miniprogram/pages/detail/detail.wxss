@@ -1,0 +1,59 @@
+/* pages/detail/detail.wxss */
+.head-container{
+  display: flex;
+  margin: 50rpx;
+  justify-content: space-around;
+}
+.img_cont{
+  width: 210rpx;
+  height: 300rpx;
+}
+.img_cont>image{
+  width: 210rpx;
+  height: 300rpx;
+}
+.detail-container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.title{
+  color: red;
+  font-size: 20px;
+}
+.site_Info {
+	position: relative;
+	margin:0 30rpx;
+	text-align: justify;
+	line-height: 34rpx;
+	/*关键属性（必须有的）  */
+	display: -webkit-box;
+}
+.hide {
+	/* 设置行高，如果没有超过最大高度，就不隐藏展开 */
+	max-height: 170rpx;    /* 行高34rpx，预计10行内容 */
+	overflow: hidden;
+	/*规定子元素的排列方向 */
+	-webkit-box-orient: vertical;
+	/*限制文本显示的行数  */
+	-webkit-line-clamp: 5;
+	/*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* 展开隐藏文字定位 */
+.show {
+	position: absolute;
+	bottom: 0rpx;
+	right: 0;
+}
+.img2{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.img2>image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,14 @@
+/* pages/lists/lists.wxss */
+.container{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.title{
+  flex:6;
+}
+.update{
+  flex:1
+}
+.delete{
+  flex:1
+}

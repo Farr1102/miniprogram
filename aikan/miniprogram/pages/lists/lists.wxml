@@ -1,0 +1,7 @@
+
+<view class="container" wx:for="{{books}}" wx:key="index">
+  <view class="title">{{index+1}}.{{item.title}}</view>
+  <button class="update" type="primary" size="mini" data-index="{{index}}">编辑</button>
+  <button class="delete" type="warn" size="mini" data-index="{{index}}">删除</button>
+</view>
+

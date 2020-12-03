@@ -1,0 +1,50 @@
+<view>
+  <!-- 轮播图开始 -->
+  <swiper class="swiper" autoplay="true" circular="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#fab">
+    <swiper-item>
+      <image src="/images/cc5c46a9f67e494b84a2d70408201b04.jpg"></image>
+      <text>敦煌：谢可寅孟佳拍飞天大片</text>
+    </swiper-item>   
+    <swiper-item>
+      <image src="/images/ccfab1941fe4471c974b57a83f74c7aa.jpg"></image>
+      <text>心宅猎人：烁烁子女装潜入调查</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/cce8a9b063344b1d8e8cd1fcee470ba0.jpg"></image>
+      <text>青春创世纪：黄景瑜凡尔赛体创业</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/37a0fe057d4443c1a79ec0594611d2eb.jpg"></image>
+      <text>哈哈哈哈哈：邓超偶遇“翻版孙俪”</text>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/35006f88d06849cb9e6965b3df676661.jpg"></image>
+      <text>狼殿下：王大陆李沁刻骨虐恋</text>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播图结束 -->
+  <!-- 图书列表开始 -->
+  <view class="list-container">
+    <view wx:for="{{category}}" wx:key="index"> 
+      <!-- 类别开始 -->
+      <view class="cateName">{{item.categoryName}}</view>
+      <!-- 类别结束 -->
+      <!-- 图书开始 -->
+      <view> 
+        <view  wx:for="{{item.books}}" wx:for-index="i" wx:for-item="p" wx:key="i">
+          <navigator url="/pages/detail/detail?_id={{p._id}}" class="books-container">
+            <view class="booksImage"><image src="{{p.cover}}"></image></view>
+            <view class="booksDetails">
+              <view>{{p.title}}</view>
+              <view>作者:{{p.author}}</view>
+              <view>分类:{{p.majorCate}}</view>
+            </view>
+          </navigator>
+          
+        </view>
+      </view>
+      <!-- 图书结束 -->
+    </view>  
+  </view>
+  <!-- 图书列表结束 -->
+</view>

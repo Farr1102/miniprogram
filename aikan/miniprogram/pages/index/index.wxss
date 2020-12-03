@@ -1,0 +1,54 @@
+/* pages/index/index.wxss */
+.swiper{
+  width: 750rpx;
+  height: 375rpx;
+}
+.swiper image{
+  width: 750rpx;
+  height: 375rpx;
+
+}
+.swiper swiper-item{
+  position: relative;
+}
+.swiper text{
+  position: absolute;
+  bottom: 25px;
+  left: 12px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+}
+.list-container{
+  margin: 10px;
+}
+.cateName{
+  color: red;
+  font-size: 25px;
+  border-bottom: 1px dotted #000;
+  margin-bottom: 5px;
+}
+.books-container{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+.booksDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.booksDetails>view:first-child{
+  font-size: 20px;
+  color: blue;
+}
+.booksImage{
+  width: 140rpx;
+  height: 200rpx;
+  margin-right:10px
+}
+.booksImage image{
+  width: 140rpx;
+  height: 200rpx;
+}

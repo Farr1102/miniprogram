@@ -1,0 +1,27 @@
+<view class="head-container">
+  <view class="img_cont">
+    <image src="{{book.cover}}"></image>
+  </view>
+  <view class="detail-container">
+    <view class="title">{{book.title}}</view>
+    <view class="author">作者: {{book.author}}</view>
+    <view class="major">类型: {{book.majorCate}}</view>
+  </view>
+</view>
+<view class="site_Info {{isShow ? 'hide' : ''}}">
+  <text class="intro" selectable="true">简介: {{book.shortIntro}}</text>
+</view>
+<text bindtap="onClickShow" style="color:blue;text-align:right;margin-right:15px;">{{isShow ? '展开' : '收起'}}</text>
+<view>评论</view>
+<view wx:if="{{comment.length==0}}">无</view>
+<block wx:else>
+  <view style="border:1px solid #ccc;" wx:for="{{comment}}" wx:key="index">
+    <view style="display:flex;">
+      <view class="img2">
+        <image src="{{item.avatar}}"></image>
+      </view>
+      <text>{{item.username}}</text>
+    </view>
+    <view>{{item.content}}</view>
+  </view>
+</block>
